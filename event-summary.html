@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS DOM Summary</title>
+</head>
+<body>
+    <h1>Final Dom Event Handlers</h1>
+
+   
+
+       <h1 id="input-text">Demo text</h1>
+       <input type="text" id="input-filed">
+       <br><br>
+       <button id="btn-update">Update</button>
+
+
+    <!-- <h3 id="handle-status">Welcome to event handler</h3>
+    <button onclick="handleOnClick()">Handle event by Add On click function</button> -->
+   <script>
+    // function handleOnClick(){
+    //     const handleStatus = document.getElementById('handle-status');
+    //     handleStatus.innerText = 'Lets try to event handler';
+    // };
+    
+
+   document.getElementById('btn-update').addEventListener('click', function(){ 
+    const inputFiled = document.getElementById('input-filed');
+    const inputText = inputFiled.value;
+    const p = document.getElementById('input-text');
+    p.innerText = inputText;
+    inputFiled.value = '';
+
+
+
+
+   });
+
+
+   </script>
+
+</body>
+</html>

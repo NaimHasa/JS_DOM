@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS DOM EVENTS</title>
+</head>
+<body>
+    <h1>DOM er ajke special events</h1>
+
+    <button onclick="colorRed()">Click Me : red</button>
+    <button onclick="console.log('You')">Click Me</button>
+    <button onclick="document.body.style.backgroundColor = 'green'">Click Me</button>
+
+
+    <script>
+        function colorRed (){
+            document.body.style.backgroundColor = 'red';
+        }
+    </script>
+</body>
+</html>
